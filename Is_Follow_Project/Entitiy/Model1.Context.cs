@@ -31,5 +31,6 @@ namespace Is_Follow_Project.Entitiy
         public virtual DbSet<TblGorevDetaylar> TblGorevDetaylar { get; set; }
         public virtual DbSet<TblGorevler> TblGorevler { get; set; }
         public virtual DbSet<TblPersonel> TblPersonel { get; set; }
+        public virtual DbSet<TblCagrilar> TblCagrilar { get; set; }
     }
 }

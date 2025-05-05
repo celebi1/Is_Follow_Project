@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
-            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
+            this.btnAnaForm = new DevExpress.XtraBars.BarButtonItem();
             this.btnDepartmanListesi = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
@@ -47,7 +47,7 @@
             this.barButtonItem14 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem15 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem16 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem17 = new DevExpress.XtraBars.BarButtonItem();
+            this.btnGorevDetayları = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem18 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem19 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem20 = new DevExpress.XtraBars.BarButtonItem();
@@ -96,7 +96,7 @@
             this.ribbonControl1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbonControl1.ExpandCollapseItem,
             this.ribbonControl1.SearchEditItem,
-            this.barButtonItem1,
+            this.btnAnaForm,
             this.btnDepartmanListesi,
             this.barButtonItem3,
             this.barButtonItem4,
@@ -112,7 +112,7 @@
             this.barButtonItem14,
             this.barButtonItem15,
             this.barButtonItem16,
-            this.barButtonItem17,
+            this.btnGorevDetayları,
             this.barButtonItem18,
             this.barButtonItem19,
             this.barButtonItem20,
@@ -136,13 +136,14 @@
             this.ribbonPage13});
             this.ribbonControl1.Size = new System.Drawing.Size(863, 150);
             // 
-            // barButtonItem1
+            // btnAnaForm
             // 
-            this.barButtonItem1.Caption = "Ana Sayfa";
-            this.barButtonItem1.Id = 1;
-            this.barButtonItem1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
-            this.barButtonItem1.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
-            this.barButtonItem1.Name = "barButtonItem1";
+            this.btnAnaForm.Caption = "Ana Sayfa";
+            this.btnAnaForm.Id = 1;
+            this.btnAnaForm.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
+            this.btnAnaForm.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
+            this.btnAnaForm.Name = "btnAnaForm";
+            this.btnAnaForm.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnAnaForm_ItemClick);
             // 
             // btnDepartmanListesi
             // 
@@ -240,8 +241,8 @@
             // 
             this.btnYeniGorevTanımı.Caption = "Yeni Görev Tanımı";
             this.btnYeniGorevTanımı.Id = 13;
-            this.btnYeniGorevTanımı.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem13.ImageOptions.Image")));
-            this.btnYeniGorevTanımı.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem13.ImageOptions.LargeImage")));
+            this.btnYeniGorevTanımı.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnYeniGorevTanımı.ImageOptions.Image")));
+            this.btnYeniGorevTanımı.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnYeniGorevTanımı.ImageOptions.LargeImage")));
             this.btnYeniGorevTanımı.Name = "btnYeniGorevTanımı";
             this.btnYeniGorevTanımı.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnYeniGorevTanımı_ItemClick);
             // 
@@ -269,13 +270,14 @@
             this.barButtonItem16.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem16.ImageOptions.LargeImage")));
             this.barButtonItem16.Name = "barButtonItem16";
             // 
-            // barButtonItem17
+            // btnGorevDetayları
             // 
-            this.barButtonItem17.Caption = "Görev Detayları";
-            this.barButtonItem17.Id = 17;
-            this.barButtonItem17.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem17.ImageOptions.Image")));
-            this.barButtonItem17.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem17.ImageOptions.LargeImage")));
-            this.barButtonItem17.Name = "barButtonItem17";
+            this.btnGorevDetayları.Caption = "Görev Detayları";
+            this.btnGorevDetayları.Id = 17;
+            this.btnGorevDetayları.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnGorevDetayları.ImageOptions.Image")));
+            this.btnGorevDetayları.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnGorevDetayları.ImageOptions.LargeImage")));
+            this.btnGorevDetayları.Name = "btnGorevDetayları";
+            this.btnGorevDetayları.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnGorevDetayları_ItemClick);
             // 
             // barButtonItem18
             // 
@@ -362,7 +364,7 @@
             // 
             // ribbonPageGroup1
             // 
-            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem1);
+            this.ribbonPageGroup1.ItemLinks.Add(this.btnAnaForm);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
             // 
             // ribbonPage2
@@ -447,7 +449,7 @@
             // 
             // ribbonPageGroup10
             // 
-            this.ribbonPageGroup10.ItemLinks.Add(this.barButtonItem17);
+            this.ribbonPageGroup10.ItemLinks.Add(this.btnGorevDetayları);
             this.ribbonPageGroup10.Name = "ribbonPageGroup10";
             // 
             // ribbonPage11
@@ -547,7 +549,7 @@
         private DevExpress.XtraBars.Ribbon.RibbonControl ribbonControl1;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage1;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem1;
+        private DevExpress.XtraBars.BarButtonItem btnAnaForm;
         private DevExpress.XtraBars.BarButtonItem btnDepartmanListesi;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage2;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup2;
@@ -579,7 +581,7 @@
         private DevExpress.XtraBars.BarButtonItem barButtonItem14;
         private DevExpress.XtraBars.BarButtonItem barButtonItem15;
         private DevExpress.XtraBars.BarButtonItem barButtonItem16;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem17;
+        private DevExpress.XtraBars.BarButtonItem btnGorevDetayları;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup9;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup10;
         private DevExpress.XtraBars.BarButtonItem barButtonItem18;

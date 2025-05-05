@@ -35,6 +35,7 @@ namespace Is_Follow_Project.Formlar
             XtraMessageBox.Show("Görev Tanımı Yapıldı", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
             this.Close();
             FrmGorevListesi fr = (FrmGorevListesi)Application.OpenForms["FrmGorevListesi"];
+
         }
 
         private void FrmGorev_Load(object sender, EventArgs e)

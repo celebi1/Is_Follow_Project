@@ -44,11 +44,20 @@ namespace Is_Follow_Project
 
         }
 
+        Formlar.FrmGorevListesi frm4;
         private void btnGorevListesi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Formlar.FrmGorevListesi frm4 = new Formlar.FrmGorevListesi();
-            frm4.MdiParent = this;
-            frm4.Show();
+            if (frm4 == null || frm4.IsDisposed)
+            {
+                frm4 = new Formlar.FrmGorevListesi();
+                frm4.MdiParent = this;
+                frm4.Show();
+            }
+            else
+            {
+                frm4.BringToFront();
+            }
+          
 
         }
 
@@ -57,6 +66,23 @@ namespace Is_Follow_Project
             Formlar.FrmGorev frm5 = new Formlar.FrmGorev();
             frm5.Show();
 
+        }
+
+        private void btnGorevDetayları_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.FrmGorevDetay frm6 = new Formlar.FrmGorevDetay();
+            frm6.Show();
+        }
+        Formlar.FrmAnaForm frm7;
+        private void btnAnaForm_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (frm7 == null || frm7.IsDisposed)
+            {
+                frm7 = new Formlar.FrmAnaForm();
+                frm7.MdiParent = this;
+                frm7.Show();
+            }
+           
         }
     }
 }

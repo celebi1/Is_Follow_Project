@@ -166,7 +166,7 @@
             // btnGuncelle
             // 
             this.btnGuncelle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnGuncelle.ImageOptions.Image")));
-            this.btnGuncelle.Location = new System.Drawing.Point(122, 414);
+            this.btnGuncelle.Location = new System.Drawing.Point(104, 286);
             this.btnGuncelle.Name = "btnGuncelle";
             this.btnGuncelle.Size = new System.Drawing.Size(126, 32);
             this.btnGuncelle.TabIndex = 7;
@@ -176,7 +176,7 @@
             // btnSil
             // 
             this.btnSil.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSil.ImageOptions.Image")));
-            this.btnSil.Location = new System.Drawing.Point(122, 385);
+            this.btnSil.Location = new System.Drawing.Point(104, 257);
             this.btnSil.Name = "btnSil";
             this.btnSil.Size = new System.Drawing.Size(126, 32);
             this.btnSil.TabIndex = 6;
@@ -186,7 +186,7 @@
             // btnEkle
             // 
             this.btnEkle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnEkle.ImageOptions.Image")));
-            this.btnEkle.Location = new System.Drawing.Point(122, 356);
+            this.btnEkle.Location = new System.Drawing.Point(104, 228);
             this.btnEkle.Name = "btnEkle";
             this.btnEkle.Size = new System.Drawing.Size(126, 32);
             this.btnEkle.TabIndex = 5;
@@ -211,7 +211,7 @@
             // btnListele
             // 
             this.btnListele.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnListele.ImageOptions.Image")));
-            this.btnListele.Location = new System.Drawing.Point(122, 327);
+            this.btnListele.Location = new System.Drawing.Point(104, 199);
             this.btnListele.Name = "btnListele";
             this.btnListele.Size = new System.Drawing.Size(126, 32);
             this.btnListele.TabIndex = 2;
