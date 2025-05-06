@@ -49,6 +49,24 @@ namespace Is_Follow_Project.Formlar
                                            x.Durum
                                        }).Where(y => y.Durum == true).ToList();
             gridView3.Columns["Durum"].Visible = false;
+            //Fihrist Komutları
+            gridControl4.DataSource = (from x in db.TblFirmalar
+                                       select new
+                                       {
+                                           x.Ad,
+                                           x.Telefon,
+                                           x.Mail,
+                                       }).ToList();
+            // Çağrı Grafikleri
+
+            int aktif_cagrılar = db.TblCagrilar.Where(x => x.Durum == true).Count();
+            int pasif_cagrılar = db.TblCagrilar.Where(x => x.Durum == false).Count();
+
+
+
+            chartControl1.Series["Series 1"].Points.AddPoint("Aktif Çağrılar", aktif_cagrılar);
+            chartControl1.Series["Series 1"].Points.AddPoint("Pasif Çağrılar",pasif_cagrılar);
+
 
         }
     }
